@@ -1,0 +1,179 @@
+body {
+    padding-bottom: 40px;
+    /* паддинг-внутренний край, внутри контейнера,
+                            отступ от него внутрь внизу страницы, а margin тут нет, 
+                            но это отступы между другими элементами*/
+    background-image: url(./images/grey.jpg);
+}
+
+.navbar-wrapper {
+    position: absolute;
+    /* она не привязана ни к чему, ему задаются координаты,
+                         если добавляются элементы или меняются, навбар не меняется*/
+    top: 0;
+    /* отступы сверху*/
+    right: 0;
+    left: 0;
+    z-index: 20;
+    font-size: 18px;
+}
+
+.navbar-wrapper>.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+    /* автоматическая ширина*/
+}
+
+
+/* CAROUSEL*/
+
+.carousel {
+    margin-bottom: 60px;
+}
+
+.carousel-caption {
+    z-index: 10;
+    /* какой из двух элементов будет поверх, здесь картинка и текст, z координата-та, что идет вверх */
+}
+
+.carousel-inner>.item>img {
+    object-fit: cover;
+    /* object fit specify how image or video should be resized to fit its container
+                           Если засунуть картинку в более узкий контейнер, то она будет сплющена, для этого
+                           object-fit  со значениями. Cover- фотка обрезается по краю контейнера*/
+    min-width: 100%;
+    /*ширина фотки займет все пространство контейнера*/
+    height: 600px;
+    /*высота фотки, я ее двигала уже через сайт и затем вставила сюда понравившееся значение*/
+}
+
+
+/* То, что под каруселью*/
+
+/* Расположение текста по центру */
+.marketing .col-lg-4 {
+    /* Расположение текста на ширине 4-ех колонок из 12(у бутстрапа их 12) */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+    /* Жирность текста*/
+}
+
+.marketing .col-lg-4 p {
+    /* descendant combinator Применяется для параграфов - p, который находится внутри любого элемента с
+                                классом col-lg-4, который находится внутри любого элемента с классом маркетинг*/
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#icon1 {
+    object-fit: cover;
+    object-position: 50% -1%;
+    /* Первое вправо,влево, второе вверх вниз */
+}
+
+#icon2 {
+    object-fit: cover;
+    object-position: 50% 84%;
+}
+
+#icon3 {
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+
+/* Featurettes
+  ------------------------- */
+
+.featurette-divider {
+    margin: 80px 0;
+    /* полоска между мини-статьями, из за фонта ее почти не видно */
+}
+
+/* Названия текста */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS - дизайн отличается в зависимости от размера экрана
+  -------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    /* если экран шире чем 768пх , то добавить отступ , @media это расширешие цсс, которое позволяет
+    написать цсс, который будет включаться только при опр.условиях*/
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 4px;
+        /* Округлили уголки навбар */
+    }
+
+    /* Текст в карусели */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    /* Для большого экрана*/
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+/*------------------Страничка Contact me------------------------------------*/
+.contact-content {
+    margin-top: 150px;
+}
+
+.contact-content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    /*-второй ставится, если первого нет в системе-*/
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.contact-content ul {
+    margin-top: 130px;
+}
+
+.contact-content footer {   /*-чтобы это работало только на той странице, пропишем класс-*/
+    margin-top: 130px
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog Page with Common Tags</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <!-- Header Section with Full-Width Image -->
+  <!-- Header Section with Background Color -->
+  <header class="bg-blue-600 p-12 text-white text-center">
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-4xl font-bold">My Personal Blog blabla</h1>
+      <p class="mt-2">A place where I share my thoughts and experiences</p>
+      <div class="mt-4">
+        <a href="blog.html" class="text-white underline">My blog page</a> |
+        <a href="https://www.w3schools.com/html/" target="_blank" class="text-white underline">Learn HTML on W3Schools</a> |
+        <a href="https://www.codecademy.com/catalog/language/html-css" target="_blank" class="text-white underline">HTML & CSS Course on Codecademy</a> |
+        <a href="https://tailwindcss.com/docs" target="_blank" class="text-white underline">Tailwind CSS Documentation</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="container mx-auto mt-8 p-4 space-y-10">
+    
+    <!-- About Me Section with Image above Title -->
+    <section id="about" class="bg-white p-6 rounded-lg shadow"> 
+      <img src="images/naked-gun.jpg" alt="About Me Image" class="w-full object-cover object-top mb-4 rounded-lg shadow-md">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-lg mb-4">Hello! I'm a web developer passionate about HTML, CSS, and JavaScript. Here is a bit more about me:</p>
+      <p><strong>Favorite Hobbies:</strong> Coding, Reading, Traveling</p>
+      <p><strong>Current Projects:</strong> Building a dynamic website with Tailwind and JavaScript.</p>
+      <div class="mt-4">
+        <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" class="text-blue-600 underline">Introduction to HTML on W3Schools</a>
+      </div>
+    </section>
+
+    <!-- Blog Post Example Section -->
+    <section id="blog-posts" class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-3xl font-semibold mb-4">Blog Posts</h2>
+      <article class="mb-8">
+        <h3 class="text-2xl font-bold mb-2">My First Blog Post</h3>
+        <p>In this post, I talk about my journey learning web development and how I started with HTML and CSS...</p>
+        <a href="#" class="text-blue-600 underline">Read More</a>
+      </article>
+      <article>
+        <h3 class="text-2xl font-bold mb-2">Understanding JavaScript Basics</h3>
+        <p>JavaScript is a versatile language that allows you to add interactivity to your web pages. Let's dive into some key concepts...</p>
+        <a href="#" class="text-blue-600 underline">Read More</a>
+      </article>
+      <div class="mt-4 flex flex-col">
+        <a href="https://www.w3schools.com/html/html_headings.asp" target="_blank" class="text-blue-600 underline">HTML Headings on W3Schools</a>
+        <a href="https://www.w3schools.com/html/html_paragraphs.asp" target="_blank" class="text-blue-600 underline">HTML Paragraphs on W3Schools</a>
+      </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-3xl font-semibold mb-4">Image Gallery</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <img src="images/misty-mountains.avif" alt="Image 1" class="w-full h-auto rounded-lg shadow">
+        <img src="images/misty-mountains.avif" alt="Image 2" class="w-full h-auto rounded-lg shadow">
+        <img src="images/misty-mountains.avif" alt="Image 3" class="w-full h-auto rounded-lg shadow">
+        <img src="images/misty-mountains.avif" alt="Image 4" class="w-full h-auto rounded-lg shadow">
+      </div>
+      <div class="mt-4">
+        <a href="https://www.w3schools.com/html/html_images.asp" target="_blank" class="text-blue-600 underline">HTML Images on W3Schools</a>
+      </div>
+    </section>
+
+    <!-- Lists Section -->
+    <section id="lists" class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-3xl font-semibold mb-4">Using Lists in HTML</h2>
+      <p>Below are examples of unordered and ordered lists using the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags.</p>
+      
+      <!-- Unordered List -->
+      <div class="mb-4">
+        <h3 class="text-2xl font-bold mb-2">Unordered List</h3>
+        <ul class="list-disc pl-6">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      
+      <!-- Ordered List -->
+      <div>
+        <h3 class="text-2xl font-bold mb-2">Ordered List</h3>
+        <ol class="list-decimal pl-6">
+          <li>Learn HTML</li>
+          <li>Practice CSS</li>
+          <li>Master JavaScript</li>
+        </ol>
+      </div>
+      <div class="mt-4">
+        <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank" class="text-blue-600 underline">HTML Lists on W3Schools</a>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+      <form class="space-y-4">
+        <div>
+          <label for="name" class="block text-lg">Your Name</label>
+          <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter your name">
+        </div>
+        <div>
+          <label for="email" class="block text-lg">Your Email</label>
+          <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter your email">
+        </div>
+        <div>
+          <label for="message" class="block text-lg">Your Message</label>
+          <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Message</button>
+      </form>
+      <div class="mt-4">
+        <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" class="text-blue-600 underline">HTML Forms on W3Schools</a>
+      </div>
+    </section>
+
+    <!-- Add New Information Section -->
+    <section id="new-info" class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-3xl font-semibold mb-4">Add New Information</h2>
+      <form id="infoForm" class="space-y-4">
+        <div>
+          <label for="newTitle" class="block text-lg">Title</label>
+          <input type="text" id="newTitle" name="newTitle" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter the title">
+        </div>
+        <div>
+          <label for="newContent" class="block text-lg">Content</label>
+          <textarea id="newContent" name="newContent" class="w-full p-2 border border-gray-300 rounded" rows="4" placeholder="Enter the content"></textarea>
+        </div>
+        <button type="button" id="addContent" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Add Content</button>
+      </form>
+      <div class="mt-4">
+        <a href="https://www.w3schools.com/html/html_headings.asp" target="_blank" class="text-blue-600 underline">HTML Headings on W3Schools</a>
+      </div>
+      <div id="newContentDisplay" class="mt-6"></div>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white p-4 text-center">
+  <p>My Personal Blog &copy; 2024</p>
+</footer>
+
+<script>
+  document.getElementById('addContent').addEventListener('click', function() {
+    const title = document.getElementById('newTitle').value;
+    const content = document.getElementById('newContent').value;
+
+    if (title && content) {
+      const newSection = document.createElement('div');
+      newSection.classList.add('bg-white', 'p-6', 'rounded-lg', 'shadow', 'mt-6');
+      newSection.innerHTML = `<h3 class="text-2xl font-bold mb-2">${title}</h3><p>${content}</p>`;
+      document.getElementById('newContentDisplay').appendChild(newSection);
+
+      // Clear the form
+      document.getElementById('infoForm').reset();
+    } else {
+      alert('Please fill in both title and content.');
+    }
+  });
+</script>
+
+</body>
+</html>
