@@ -1,0 +1,10 @@
+Чтобы код красиво смотрелася, то в файле в любом месте нажать правой кнопкой и выбрать Format Document
+
+
+
+Hello :)
+
+
+
+Для формы контакты: 
+<p class="lead">If you have any suggestions for a joint project or collaboration, feel free to write to me and I will be happy to consider all options. From time to time I participate in projects of thematic photo shoots or video shootings, and also in the format of volunteering and training I am ready to take part in a startup in the IT sphere as a manual tester.</p>
