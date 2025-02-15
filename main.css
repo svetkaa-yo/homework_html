@@ -40,8 +40,15 @@ body {
     list-style-type: none;
   }
 
+
+
 .carousel {
     margin-bottom: 60px;
+}
+
+.carousel-caption p{
+    font-size: 20px;
+    
 }
 
 .carousel-caption {
@@ -141,7 +148,7 @@ body {
     /* Текст в карусели */
     .carousel-caption p {
         margin-bottom: 20px;
-        font-size: 21px;
+        font-size: 15px;
         line-height: 1.4;
     }
 
