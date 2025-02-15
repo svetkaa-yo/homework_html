@@ -40,14 +40,28 @@ body {
     list-style-type: none;
   }
 
+.container {
+    position: relative;
+  }
 
+.image {
+    position: absolute;
+    top: -280px; /* Позиционируем картинку ниже */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем картинку по горизонтали */
+  }
 
 .carousel {
     margin-bottom: 60px;
 }
 
+.carousel-caption ul{
+    font-size: 25px;
+
+}
+
 .carousel-caption p{
-    font-size: 20px;
+    font-size: 25px;
     
 }
 
@@ -121,9 +135,40 @@ body {
     letter-spacing: -1px;
 }
 
+.col-md-7 ul{
+    font-size: 20px;
+}
+
+
+
 
 /* RESPONSIVE CSS - дизайн отличается в зависимости от размера экрана
   -------------------------------------------------- */
+@media (min-width: 390px){
+
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .carousel-caption ul {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    
+    .image2 {
+            position: absolute;
+            top: -710px; /* Позиционируем картинку ниже */
+            left: 50%;
+            transform: translateX(-50%); /* Центрируем картинку по горизонтали */
+          }
+    }
+
+
+
+
+
 
 @media (min-width: 768px) {
 
@@ -148,9 +193,27 @@ body {
     /* Текст в карусели */
     .carousel-caption p {
         margin-bottom: 20px;
-        font-size: 15px;
+        font-size: 25px;
         line-height: 1.4;
     }
+
+    .carousel-caption ul {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .container {
+        position: relative;
+      }
+    
+    .image {
+        position: absolute;
+        top: -270px; /* Позиционируем картинку на 30px ниже */
+        left: 50%;
+        transform: translateX(-50%); /* Центрируем картинку по горизонтали */
+      }
+
 
     .featurette-heading {
         font-size: 50px;
@@ -160,10 +223,34 @@ body {
 
 @media (min-width: 992px) {
 
+    .container {
+        position: relative;
+      }
+    
+    .image {
+        position: absolute;
+        top: -300px; /* Позиционируем картинку ниже */
+        left: 50%;
+        transform: translateX(-50%); /* Центрируем картинку по горизонтали */
+      }
+
     /* Для большого экрана*/
     .featurette-heading {
         margin-top: 120px;
     }
+
+    .carousel-caption ul {
+        margin-bottom: 20px;
+        font-size: 25px;
+        line-height: 1.4;
+    }
+
+    .image2 {
+        position: absolute;
+        top: 0px; /* Позиционируем картинку ниже */
+        left: 50%;
+        transform: translateX(-50%); /* Центрируем картинку по горизонтали */
+      }
 }
 
 /*------------------Страничка Contact me------------------------------------*/
