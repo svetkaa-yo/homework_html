@@ -170,6 +170,8 @@
     
     <script>
       // Найдем все ссылки внутри <ul> с классом 'open-in-new-window' и добавим атрибут target="_blank"
+      // document - текущий файл, qSA- выбрать элементы с этим селектором (все а элементы, кот.находятся внутри
+      //элемента с классом '...')
       document.querySelectorAll('.open-in-new-window a').forEach(function(link) {
         link.setAttribute('target', '_blank');
       });
